@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Londrina+Shadow&display=swap');
+
+body {
+    background-image: url(/assets/image/pizza2.jpg);
+    background-color: #fefbf4;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 3rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.div-1, .div-2, .div-3, .div-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px; 
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fefbf4;
+    color: black;
+    border-radius: 10px;
+    transition: 500ms linear;
+}
+
+.btn-pedido {
+    width: 150px;
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fefbf4;
+    border-radius: 10px;
+}
+
+.div-1:hover, .div-2:hover, .div-3:hover, .div-4:hover {
+    background-color: #ffdd99; 
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    .div-1, .div-2, .div-3, .div-4 {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container-principal {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .div-1, .div-2, .div-3, .div-4 {
+        width: 100%;
+        max-width: 300px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .div-1, .div-2, .div-3, .div-4 {
+        width: 100%;
+        max-width: 250px;
+        height: 140px;
+        padding: 15px;
+    }
+}
+

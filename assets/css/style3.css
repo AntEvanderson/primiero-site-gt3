@@ -1,0 +1,25 @@
+body {
+    background-image: url(/assets/image/pizza2.jpg);
+    background-color: #fefbf4;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    width: 90%; 
+    height: 600px;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 100px;
+    border-radius: 8px;
+}
+
+
+
